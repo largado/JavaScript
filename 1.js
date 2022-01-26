@@ -1,20 +1,21 @@
-let xBolinha = 100;
+let xBolinha = 300;
 let yBolinha = 200;
-let diametro22 = 22;
-let velocidadexdaBolinha = 5;
+let diametro22 = 15;
+
+let velocidadexdaBolinha = 6;
 let velocidadeydaBolinha = 6;
 
 function setup() {
-  createCanvas(600, 500);
+  createCanvas(600, 400);
 }
 
 function draw() {
   background(20);
-  ellipse(xBolinha, yBolinha, diametro22);
-  xBolinha =+ xBolinha + velocidadexdaBolinha;
-  yBolinha =+ yBolinha + velocidadeydaBolinha;
+  circle(xBolinha, yBolinha, diametro22);
+  xBolinha += velocidadexdaBolinha;
+  //yBolinha =+ yBolinha + velocidadeydaBolinha;
   
   if(xBolinha > width || xBolinha < 0) {
-    velocidadexBolinha *= -1;
+    velocidadexdaBolinha *= -1;
   }
 }
