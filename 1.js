@@ -56,3 +56,7 @@ function verificaSeColide(){
 function mostraRaquete(){
   rect(xRaquete,yRaquete,comprimentoRaquete,alturaRaquete);
 }
+
+function movimentaMinhaRaquete(){
+  
+}
