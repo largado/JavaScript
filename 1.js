@@ -12,8 +12,8 @@ let velocidadeydaBolinha = 6;
 
 //variáveis da raquete
 
-let xRaquete = 16;
-let yRaquete = 6;
+let xRaquete = 1;
+let yRaquete = 20;
 let comprimentoRaquete = 10;
 let alturaRaquete = 90;
 
@@ -27,6 +27,7 @@ function draw() {
   movimentaBolinha();
   verificaSeColide();
   mostraRaquete();
+  movimentaMinhaRaquete();
   
 
 }
@@ -58,5 +59,13 @@ function mostraRaquete(){
 }
 
 function movimentaMinhaRaquete(){
+  if (keyIsDown(UP_ARROW)){
+    yRaquete -= 10;
+    
+  }
+  if (keyIsDown(DOWN_ARROW)){
+    yRaquete += 10;
+  }
+  
   
 }
